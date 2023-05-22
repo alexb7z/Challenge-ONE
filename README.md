@@ -1,6 +1,6 @@
 # Challenge-Oracle-ONE
 
-##As "chaves" de criptografia utilizadas são:
+## As "chaves" de criptografia utilizadas são:
 *A letra "e" é convertida para "enter."
 A letra "i" é convertida para "imes."
 A letra "a" é convertida para "ai."
