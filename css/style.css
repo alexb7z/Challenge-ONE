@@ -189,8 +189,10 @@ svg{
 
 .digite{
     position: absolute;
-    top: 75%;
-    right: 10%;
+    top: 78%;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 12pt;
     text-align: center;
     z-index: 2;
