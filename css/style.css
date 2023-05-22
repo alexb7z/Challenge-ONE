@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap ');
+*{
+    font-family: Quicksand;
+}
+
+@import url('https://fonts.cdnfonts.com/css/cofo-sans');
+
+body{
+    background: #343A40;
+    color: white;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    padding: 2% 0 2% 3%;
+    color: white;
+}
+
+.digitar{
+    background: #343A40;
+    margin: 1% auto auto 12%;
+}
+
+#text1{
+    background: #343A40;
+    border: none;
+    font-size: 16pt;
+    padding: 2%;
+    color: white;
+    width: 650px;
+}
+
+textarea::placeholder{
+    color: white;
+}
+
+textarea:focus, input:focus, select:focus{
+    box-shadow: 0;
+    border: none;
+    outline: 0;
+}
+
+.atencao{
+    margin: 2% 0 0 13%;    
+}
+
+.ex{
+    float: left;
+    width: 16px;
+    height: 16px;
+}
+
+.letras{
+    float: left;
+    margin: 2px auto auto 8px;
+    font-size: 9pt;
+}
+
+.botoes{
+    position: relative;
+    margin: 1% 0 0 13%;
+}
+
+input[type=button]:hover{
+    cursor: pointer;
+}
+
+#cri:hover{
+    background: #072B61;
+    border: solid 1px #072B61;
+}
+
+.des:hover, .copy:hover{
+    background: #868E96;
+    border: solid 1px white;
+}
+
+#cri, .des{
+    width: 280px;
+    height: 50px;
+    border: none;
+    border-radius: 17px;
+    margin: auto 5px auto 5px;
+}
+
+#cri{
+    background: #052051;
+    color: white;
+    border: solid 1px #052051;
+}
+
+.des{
+    background: #495057;
+    color: white;
+    border: solid 1px white;
+}
+
+.caixa{
+    position: absolute;
+    left: 74%;
+    top: 4%;
+    border: none;
+    background: #495057;
+    font-size: 16pt;
+    width: 300px;
+    height: 590px;
+    border-radius: 30px;
+    padding: 1%;
+    z-index: 1;
+    align-items: center;
+}
+
+#caixa-after{
+    position: absolute;
+    left: 74%;
+    top: 4%;
+    border: none;
+    background: #495057;
+    word-wrap: break-word;
+    font-size: 16pt;
+    width: 300px;
+    height: 590px;
+    border-radius: 30px;
+    padding: 1%;
+    z-index: 3;
+    opacity: 0;
+    transition: 0.4s;
+    text-align: justify;
+}
+
+textarea#text1 {
+    height: 365px;
+    background: #343A40;
+    resize: none;
+    color: white;
+    text-align: justify;
+    border: none;
+    font-size: 16pt;
+}
+
+textarea#item{
+    background: #495057;
+    resize: none;
+    color: white;
+    text-align: center;
+    border: none;
+    font-size: 12pt;
+}
+
+.copy{
+    width: 280px;
+    height: 50px;
+    border: none;
+    border-radius: 17px;
+    margin-top: 4%;
+    margin-left: 4%;
+    background-color: #495057;
+    border: solid 1px white;
+    color: white;
+    z-index: 5;
+}
+
+#cri input[type=button]:focus{
+    border: #052051;
+}
+
+input[type=button]:focus{
+    border: solid 1px white ;
+}
+
+svg{
+    position: absolute;
+    width: 250px;
+    left: 10%;
+    top: 20%;
+    z-index: 2;
+}
+
+.nenhuma{
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    font-size: 20pt;
+    text-align: center;
+    z-index: 2;
+}
+
+.digite{
+    position: absolute;
+    top: 75%;
+    font-size: 12pt;
+    text-align: center;
+    z-index: 2;
+}
+
+#mensagem{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background: rgb(255, 199, 199);
+    top: 3%;
+    left: 45%;
+    border-radius: 20px;
+    color: black;
+    padding: 0.5% 1%;
+    border: solid 2px red;
+    opacity: 0; 
+    transition: 0.5;
+}
+
+.p{
+    position: absolute;
+    top: 32%;
+    left: 27%;
+    font-size: 15pt;
+    font-weight: 600;
+}
+
+#mensagem1{
+    position: absolute;
+    width: 300px;
+    height: 75px;
+    background: rgb(255, 199, 199);
+    top: 3%;
+    left: 39%;
+    border-radius: 20px;
+    color: black;
+    padding: 0.5% 1%;
+    border: solid 2px red;
+    opacity: 0;
+    transition: 0.5;
+}
+
+.aviso{
+    top: 25%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.p1{
+    position: absolute;
+    top: 17%;
+    left: 15%;
+    font-size: 15pt;
+    font-weight: 600;
+}
+
+#mensagem2{
+    position: absolute;
+    width: 170px;
+    height: 50px;
+    background: rgb(26, 26, 26);
+    top: 3%;
+    left: 43%;
+    border-radius: 20px;
+    color: white;
+    padding: 0.5% 1%;
+    border: solid 2px rgb(0, 0, 0);
+    opacity: 0;
+    transition: 0.5;
+}
+
+.p2{
+    position: absolute;
+    top: 32%;
+    left: 15%;
+    font-size: 15pt;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px){
+    svg{
+        display: none;
+    }
+    
+    #text1{
+        position: absolute;
+        background: #343A40;
+        border: none;
+        font-size: 16pt;
+        padding: 2%;
+        color: white;
+    }
+
+    .caixa{
+        position: relative;
+        margin: auto;
+        left: auto;
+        border: none;
+        height: auto;
+        width: 80%;
+        background: #495057;
+        font-size: 16pt;
+        border-radius: 30px;
+        padding: 2%;
+        z-index: 1;
+    }
+    
+    #caixa-after{
+        position: relative;
+        margin: auto;
+        left: auto;
+        border: none;
+        height: auto;
+        width: 80%;
+        background: #495057;
+        word-wrap: break-word;
+        font-size: 16pt;
+        border-radius: 30px;
+        padding: 2%;
+        z-index: 3;
+        opacity: 0;
+        transition: 0.4s;
+        text-align: justify;
+    }
+
+    .atencao{   
+        position: relative;
+        margin-top: 60%;
+        align-items: center;
+    }
+    
+    .ex{
+        float: left;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .letras{
+        margin: 2px auto auto 8px;
+        font-size: 9pt;
+    }
+    
+    #cri, .des{
+        width: 95%;
+        height: 60px;
+        border-radius: 17px;
+        font-size: 12pt;
+        padding: 1%;
+    }
+
+    #cri{
+        background: #052051;
+        color: white;
+        border: solid 1px #052051;
+    }
+    
+    .des{
+        background: #495057;
+        color: white;
+        border: solid 1px white;
+    }
+
+    .botoes{  
+        display: flex;
+        width: 80%; 
+        margin: 2% auto 4% auto;
+        align-items: center;
+    }
+
+    .digitar, #text1{
+        width: 80%;
+    }
+
+    textarea#item{
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        background: #495057;
+        resize: none;
+        color: white;
+        text-align: center;
+        border: none;
+        font-size: 12pt;
+    }
+
+    #mensagem{
+        display: flex;
+        position: fixed;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgb(255, 199, 199);
+        border-radius: 20px;
+        color: black;
+        padding: 0.5% 1%;
+        border: solid 2px red;
+        opacity: 0; 
+        transition: 0.5;
+        z-index: 4;
+    }
+
+    #mensagem1{
+        display: flex;
+        position: fixed;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        background: rgb(255, 199, 199);
+        border-radius: 20px;
+        color: black;
+        padding: 1%;
+        border: solid 2px red;
+        opacity: 0;
+        transition: 0.5;
+        z-index: 4;
+        text-align: justify;
+    }
+
+    #mensagem2{
+        display: flex;
+        position: fixed;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 50px;
+        background: rgb(26, 26, 26);
+        border-radius: 20px;
+        color: white;
+        padding: 0.5% 1%;
+        border: solid 2px rgb(0, 0, 0);
+        opacity: 0;
+        transition: 0.5;
+        z-index: 4;
+    }
+
+    .nenhuma{
+        position: relative;
+        top: 2%;
+        font-size: 16pt;
+        z-index: 2;
+        font-weight: 600;
+        padding: 2%;
+    }
+
+    .digite{
+        position: relative;
+        top: 2%;
+        left: auto;
+        right: auto;
+        font-size: 12pt;
+        z-index: 2;
+        padding: 2%;
+    }
+
+    .copy{
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-radius: 17px;
+        margin-top: 2%;
+        background-color: #495057;
+        border: solid 1px white;
+        color: white;
+        align-items: center;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .p{
+        position: absolute;
+        top: 32%;
+        left: 25%;
+        font-size: 15pt;
+        font-weight: 600;
+    }
+
+    .p1{
+        position: absolute;
+        top: 8%;
+        left: 10%;
+        font-size: 15pt;
+        font-weight: 600;
+        padding: 2%;
+    }
+
+    .p2{
+        position: absolute;
+        top: 30%;
+        left: 11%;
+        font-size: 15pt;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 375px){
+   #cri, .des{
+        width: 95%;
+        height: 60px;
+        border-radius: 17px;
+        font-size: 12pt;
+        padding: 1%;
+    }
+
+    #cri{
+        display: block;
+        background: #052051;
+        color: white;
+        border: solid 1px #052051;
+        margin-bottom: 6%;
+    }
+    
+    .des{
+        display: block;
+        background: #495057;
+        color: white;
+        border: solid 1px white;
+    }
+
+    .botoes{  
+        display: block;
+        width: 80%;
+        position: relative;  
+        margin: 2% auto 4% auto;
+        align-items: center;
+    }
+
+    .atencao{   
+        position: relative;
+        margin-top: 60%;
+        align-items: center;
+    }
+    
+    .ex{
+        float: left;
+        margin-right: 2%;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .letras{
+        float: none;
+        margin: 2px auto auto 8px;
+        margin-bottom: -1px;
+    }
+
+    #mensagem{
+        display: flex;
+        position: fixed;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgb(255, 199, 199);
+        border-radius: 20px;
+        color: black;
+        padding: 0.5% 1%;
+        border: solid 2px red;
+        opacity: 0; 
+        transition: 0.5;
+        z-index: 4;
+    }
+
+    #mensagem1{
+        display: flex;
+        position: fixed;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        background: rgb(255, 199, 199);
+        border-radius: 20px;
+        color: black;
+        padding: 0.5% 1%;
+        border: solid 2px red;
+        opacity: 0;
+        transition: 0.5;
+        z-index: 4;
+        text-align: justify;
+    }
+
+    #mensagem2{
+        display: flex;
+        position: fixed;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgb(26, 26, 26);
+        border-radius: 20px;
+        color: white;
+        padding: 0.5% 1%;
+        border: solid 2px rgb(0, 0, 0);
+        opacity: 0;
+        transition: 0.5;
+        z-index: 4;
+    }
+
+    .p{
+        position: absolute;
+        top: 32%;
+        left: 25%;
+        font-size: 15pt;
+        font-weight: 600;
+    }
+
+    .p1{
+        position: absolute;
+        top: 4%;
+        left: 11%;
+        font-size: 15pt;
+        font-weight: 600;
+        padding: 2%;
+    }
+
+    .p2{
+        position: absolute;
+        top: 30%;
+        left: 11%;
+        font-size: 15pt;
+        font-weight: 600;
+    }
+}
