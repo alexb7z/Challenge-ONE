@@ -447,17 +447,13 @@ svg{
     }
 
     .copy{
-        width: 100%;
-        height: 50px;
+        width: 92%;
         border: none;
         border-radius: 17px;
         margin-top: 2%;
         background-color: #495057;
         border: solid 1px white;
         color: white;
-        align-items: center;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
 
     .p{
