@@ -82,13 +82,13 @@ input[type=button]:hover{
     border: none;
     border-radius: 17px;
     margin: auto 5px auto 5px;
+    margin-bottom: 2%;
 }
 
 #cri{
     background: #052051;
     color: white;
     border: solid 1px #052051;
-    margin-bottom: 2%;
 }
 
 .des{
