@@ -536,7 +536,7 @@ svg{
     #mensagem{
         display: flex;
         position: fixed;
-        top: 8%;
+        top: 5%;
         left: 50%;
         transform: translate(-50%, -50%);
         background: rgb(255, 199, 199);
@@ -552,7 +552,7 @@ svg{
     #mensagem1{
         display: flex;
         position: fixed;
-        top: 10%;
+        top: 6.8%;
         left: 50%;
         transform: translate(-50%, -50%);
         margin: 0 auto;
@@ -570,7 +570,7 @@ svg{
     #mensagem2{
         display: flex;
         position: fixed;
-        top: 8%;
+        top: 6%;
         left: 50%;
         transform: translate(-50%, -50%);
         background: rgb(26, 26, 26);
