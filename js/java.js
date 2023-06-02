@@ -13,22 +13,22 @@ if (textinho !== ''){
   div.style.display = 'none';
   }
   else{
-    document.getElementById("mensagem1").style.opacity = "1";
+    document.getElementById("mensagem1").style.display = "flex";
     document.getElementById('caixa-after').style.opacity="0";
     const element = document.getElementById("mensagem1");
       setTimeout(() => {
-        element.style.opacity = 0;
+        element.style.display = 'none';
       }, 3000);
       div.style.display = 'block';
   }
 }
 else{
-document.getElementById("mensagem").style.opacity = "1";
+document.getElementById("mensagem").style.display = "flex";
 document.getElementById("text1").focus();
     document.getElementById('caixa-after').style.opacity="0";
     const element = document.getElementById("mensagem");
       setTimeout(() => {
-        element.style.opacity = 0;
+        element.style.display = 'none';
       }, 3000);
       div.style.display = 'block';
 }
@@ -46,22 +46,22 @@ function descriptografar(){
     div.style.display = 'none';
     }
     else{
-      document.getElementById("mensagem1").style.opacity = "1";
+      document.getElementById("mensagem1").style.display = "flex";
       document.getElementById('caixa-after').style.opacity="0";
       const element = document.getElementById("mensagem1");
         setTimeout(() => {
-          element.style.opacity = 0;
+          element.style.display = 'none';
         }, 3000);
         div.style.display = 'block';
     }
   }
   else{
-  document.getElementById("mensagem").style.opacity = "1";
+  document.getElementById("mensagem").style.display = "flex";
   document.getElementById("text1").focus();
       document.getElementById('caixa-after').style.opacity="0";
       const element = document.getElementById("mensagem");
         setTimeout(() => {
-          element.style.opacity = 0;
+          element.style.display = 'none';
         }, 3000);
         div.style.display = 'block';
   }
@@ -96,13 +96,13 @@ function copiar() {
   document.execCommand('copy');
   texto_copiar.value = "";
   texto_copiar.disabled = true;
-  document.getElementById("mensagem2").style.opacity = "1";
+  document.getElementById("mensagem2").style.display = "flex";
   document.getElementById('caixa-after').style.opacity="0";
   
   div.style.display = 'block';
 
   const element = document.getElementById("mensagem2");
     setTimeout(() => {
-    element.style.opacity = 0;
+    element.style.display = 'none';
     }, 3000);
 }
